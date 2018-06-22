@@ -1,0 +1,165 @@
+{
+  "type": "scene",
+  "properties": {
+    "height": 62.73516642547033,
+    "width": 100.0,
+    "baseExtent": [
+      3557441.789898726,
+      5879488.815172774,
+      3559162.218713944,
+      5880568.129053232
+    ],
+    "crs": "EPSG:4326",
+    "proj": "+proj=longlat +datum=WGS84 +no_defs",
+    "rotation": 0,
+    "wgs84Center": {
+      "lat": 5880028.472113003,
+      "lon": 3558302.004306335
+    },
+    "zExaggeration": 1.5,
+    "zShift": 0.0
+  },
+  "layers": [
+    {
+      "type": "layer",
+      "id": 6,
+      "properties": {
+        "name": "Station NKI",
+        "queryable": 1,
+        "visible": true,
+        "type": "polygon",
+        "objType": "Extruded"
+      },
+      "data": {
+        "materials": [
+          {
+            "type": 0,
+            "c": 3383340
+          },
+          {
+            "type": 2,
+            "c": 0
+          }
+        ],
+        "blocks": [
+          {
+            "url": "./data/index/L0_GEOM0.json"
+          }
+        ]
+      }
+    },
+    {
+      "type": "layer",
+      "id": 10,
+      "properties": {
+        "name": "Neue Gasbrunnen/eingebrachte Gaspegel",
+        "queryable": 1,
+        "visible": true,
+        "type": "point",
+        "objType": "Sphere",
+        "propertyNames": [
+          "Name",
+          "id"
+        ],
+        "label": {
+          "index": 0,
+          "relative": true
+        }
+      },
+      "data": {
+        "materials": [
+          {
+            "type": 0,
+            "c": 2062591
+          }
+        ],
+        "blocks": [
+          {
+            "url": "./data/index/L1_GEOM0.json"
+          }
+        ]
+      }
+    },
+    {
+      "type": "layer",
+      "id": 11,
+      "properties": {
+        "name": "Bestandsgasbrunnen",
+        "queryable": 1,
+        "visible": true,
+        "type": "point",
+        "objType": "Sphere",
+        "propertyNames": [
+          "LAYER",
+          "Z",
+          "TEXT",
+          "HEIGHT",
+          "ANGLE",
+          "APX",
+          "APY",
+          "APZ",
+          "SCALE",
+          "HJUST",
+          "VJUST",
+          "STYLE",
+          "FLAGS"
+        ],
+        "label": {
+          "index": 2,
+          "relative": true
+        }
+      },
+      "data": {
+        "materials": [
+          {
+            "type": 0,
+            "c": 14883356
+          }
+        ],
+        "blocks": [
+          {
+            "url": "./data/index/L2_GEOM0.json"
+          }
+        ]
+      }
+    },
+    {
+      "type": "layer",
+      "id": 23,
+      "properties": {
+        "name": "Oberfl\u00e4che_2016",
+        "queryable": 1,
+        "visible": true,
+        "type": "dem",
+        "shading": true
+      },
+      "data": [
+        {
+          "type": "block",
+          "layer": 23,
+          "block": 0,
+          "grid": {
+            "width": 758,
+            "height": 476,
+            "url": "./data/index/L3_DEM0.bin"
+          },
+          "width": 100.0,
+          "height": 62.73516642547033,
+          "translate": [
+            0.0,
+            0.0,
+            0
+          ],
+          "material": {
+            "type": 0,
+            "image": {
+              "url": "./data/index/L3_IMG0.png"
+            },
+            "ds": 1
+          },
+          "sides": true
+        }
+      ]
+    }
+  ]
+}
